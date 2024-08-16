@@ -13,5 +13,5 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           ISSUE: ${{ github.event.issue.html_url }}
         run: |
-          $Issue = gh issue list --state "open" --search "hash:3bad9d1217a7985063b5e9b5fd4622280f7eebbdaaa435b8eca7cb85709e4b15" --limit 1 --json
+          $Issue = gh issue list --state "open" --search "hash:3bad9d1217a7985063b5e9b5fd4622280f7eebbdaaa435b8eca7cb85709e4b15" --limit 1
           Write-Host $Issue
