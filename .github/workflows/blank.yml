@@ -6,6 +6,9 @@ on:
 jobs:
   comment:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
     steps:
       - run: gh issue comment $ISSUE --body "Thank you for opening this issue!"
         env:
